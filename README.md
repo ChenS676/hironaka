@@ -104,7 +104,7 @@ $$\rho(n) = \dfrac{g(n)}{n}.$$
 This ratio directly relates to the cumulative rewards for host and agent ($n\rho(n)$ for host and $n(1-\rho(n))$ for
 agent). If a limit
 
-$$\DeclareMathOperator*{\lim}{\text{lim}}\rho = \displaystyle\lim_\limits{n\rightarrow\infty}\rho(n)$$
+$$\lim \rho = \displaystyle\lim\limits_{n\rightarrow\infty}\rho(n)$$
 
 exists, it would be an important measure for the pair of host and agent:
 
@@ -148,9 +148,9 @@ However, there are special, ill-behaved points, where the local geometry of $X$ 
 
 The set $X$ is singular at a point $a \in X$ if the Jacobian matrix
 
-$$Jac(X,a)=\left(\frac{\partial f_i}{\partial x_j}\right)(a)$$
+$$\text{Jac}(X,a)=\left(\frac{\partial f_i}{\partial x_j}\right)(a)$$
 
-at a is of rank smaller than $n-dim(X)$. The set of singular points of $X$ is called the singular locus of $X$.
+at a is of rank smaller than $n-\text{dim}(X)$. The set of singular points of $X$ is called the singular locus of $X$.
 
 ## Blow-up: turning singularities into smooth points
 
