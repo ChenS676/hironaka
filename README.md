@@ -99,9 +99,9 @@ Fix a pair of host and agent. Given an integer $n$, we can run a random game for
 if ended). Let $g(n)$ be the number of games that happen during the $n$ steps. An important metric that measures the
 pair of host and agent is the ratio
 
-$$\rho(n) = \dfrac{g(n)}{n}.$$
+$$\rho(n) = \dfrac{g(n)}{n}$$
 
-This ratio directly relates to the cumulative rewards for host and agent ($n\rho(n)$ for host and $n(1-\rho(n))$ for
+This ratio directly relates to the cumulative rewards for host and agent $n\rho(n)$ for host and $n(1-\rho(n))$ for
 agent). If a limit
 
 $$\lim \rho = \displaystyle\lim\limits_{n\rightarrow\infty}\rho(n)$$
