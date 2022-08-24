@@ -72,7 +72,7 @@ a move, and the agents makes a move. Their moves change the `state` and the game
 A `state` is represented by a set of points $S\in\mathbb Z^n$ satisfying certain rules depending of the different versions
 of the game. At each turn,
 
-- The host chooses a subset $I\subset \{1,2,\cdots, n\}$ such that $|I|\geq 2$.
+- The host chooses a subset $I \subset \{1,2,\cdots, n\}$ such that $|I|\geq 2$.
 - The agent chooses a number $i\in I$.
 
 ### State change
@@ -150,7 +150,7 @@ The set $X$ is singular at a point $a \in X$ if the Jacobian matrix
 
 $$\text{Jac}(X,a)=\left(\frac{\partial f_i}{\partial x_j}\right)(a)$$
 
-at a is of rank smaller than $n-\text{dim}(X)$. The set of singular points of $X$ is called the singular locus of $X$.
+at a is of rank smaller than $X$. The set of singular points of $X$ is called the singular locus of $X$.
 
 ## Blow-up: turning singularities into smooth points
 
@@ -243,7 +243,7 @@ $$x_j' = \begin{cases}x_j, &\qquad\text{if } i\neq j \newline \sum\limits_{k\in 
 
 The new `state` $S'$ is formed by the vertices of the Newton polyhedron of $\Delta'=\{T_{I,i}(x):x\in S\}$.
 - `terminal states`: a state $S$ is terminal if it consists of one single point. 
-\end{enumerate}
+
 In short, the host wants to reduce the size of $S$ as quickly as possible, but the agent wants to keep the size of
 $S$ large.
 
@@ -256,8 +256,8 @@ was given by Mark Spivakovsky in 1980, which proved the resolution theorem for h
 - `states`: A finite set of rational points $S \subset \mathbf{Q}^n$, such that $\sum\limits_{i=1}^n x_i>1$ for all 
 $(x_1,\ldots, x_n)\in S$, and $S$ is the set of vertices of the positive 
 convex hull $\Delta=\{S+\mathbf{R}^n_+\}$. 
-- `move`: The host chooses a subset $I\subset \{1,2,\cdots, n\}$ such that $|I|\geq 2$ and 
-\sum\limits_{i\in I}x_i\ge 1$ for all $(x_1,\ldots, x_n)\in S$. The agent chooses a number $i\in I$.
+- `move`: The host chooses a subset $I \subset \{1,2,\cdots, n\}$ such that $|I|\geq 2$ and 
+$\sum\limits_{i\in I}x_i\ge 1$ for all $(x_1,\ldots, x_n)\in S$. The agent chooses a number $i\in I$.
 - `state change`: Given the pair $(I,i)$ chosen by the host, for $x=(x_1,\cdots,x_n)\in \mathbb Z^n$ we define
 $T_{I,i}(x)=(x_1',\ldots, x_n')$ where
 
@@ -285,7 +285,7 @@ The agent chooses some element $i\in S$ and modifies the Newton polygon $\Delta$
 the following procedure: first, the agent selects a finite number of points $y=(y_1,\ldots, y_n)$, all of whose 
 coordinates are rational numbers with denominators bounded by $N$ as above, and for each of which there exists
 an $x = (x_1, \ldots, x_n)\in \Delta$ which satisfy some basic relations. $\Delta^*$ is then taken to be the positive 
-convex hull of $\Delta \cup \{selected points\}$.
+convex hull of $\Delta \cup \{selected \quad points\}$.
 
 - `state change`: Given the pair $(I,i)$ chosen by the host, for $x=(x_1,\cdots,x_n)\in \mathbb Z^n$ we define
 $T_{I,i}(x)=(x_1',\ldots, x_n')$ where
@@ -315,8 +315,8 @@ long-standing question in enumerative geometry.
 - `states`: A pair (S,w), where: S is a finite set of points $S \subset \mathbf{N}^n$, such that $S$ is the set of 
 vertices of the positive convex hull $\Delta=\{S+\mathbf{R}^n_+\}$; $w=(w_1,\ldots, w_n)\in \mathbf{N}^n$ is a weight 
 vector associating a nonnegative integer weight to all coordinates.
-- `move`: The host chooses a subset $I\subset \{1,2,\cdots, n\}$ such that $|I|\geq 2$ and 
-\sum\limits_{i\in I}x_i\ge 1$ for all $(x_1,\ldots, x_n)\in S$.
+- `move`: The host chooses a subset $I \subset \{1,2,\cdots, n\}$ such that $|I|\geq 2$ and 
+$\sum\limits_{i\in I}x_i\ge 1$ for all $(x_1,\ldots, x_n)\in S$.
 The agent chooses an $i\in I$ such that $w_i$ is minimal in $\{w_j: j\in I\}$.
 - `state change`: Given the pair (I,i) chosen by the host, for $x=(x_1,\cdots,x_n)\in \mathbb Z^n$ we define
 $T_{I,i}(x)=(x_1',\ldots, x_n')$ where
